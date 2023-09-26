@@ -3980,9 +3980,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/corinnewilson/Projects/SEPTA App/SEPTA App/SEPTA App.csproj",
-      "projectName": "SEPTA App",
-      "projectPath": "/Users/corinnewilson/Projects/SEPTA App/SEPTA App/SEPTA App.csproj",
+      "projectUniqueName": "/Users/corinnewilson/Projects/SEPTA App/SEPTA App/SEPTA_App.csproj",
+      "projectName": "SEPTA_App",
+      "projectPath": "/Users/corinnewilson/Projects/SEPTA App/SEPTA App/SEPTA_App.csproj",
       "packagesPath": "/Users/corinnewilson/.nuget/packages/",
       "outputPath": "/Users/corinnewilson/Projects/SEPTA App/SEPTA App/obj/",
       "projectStyle": "PackageReference",

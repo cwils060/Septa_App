@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "/Users/corinnewilson/Projects/SEPTA App/SEPTA App/obj/Debug/net7.0/scopedcss/projectbundle/SEPTA App.bundle.scp.css",
-      "PackagePath": "staticwebassets/SEPTA App.bundle.scp.css"
+      "Id": "/Users/corinnewilson/Projects/SEPTA App/SEPTA App/obj/Debug/net7.0/scopedcss/projectbundle/SEPTA_App.bundle.scp.css",
+      "PackagePath": "staticwebassets/SEPTA_App.bundle.scp.css"
     },
     {
       "Id": "/Users/corinnewilson/Projects/SEPTA App/SEPTA App/wwwroot/css/site.css",
@@ -245,20 +245,20 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.SEPTA App.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.SEPTA_App.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.SEPTA App.props",
-      "PackagePath": "build\\SEPTA App.props"
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.SEPTA_App.props",
+      "PackagePath": "build\\SEPTA_App.props"
     },
     {
-      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.SEPTA App.props",
-      "PackagePath": "buildMultiTargeting\\SEPTA App.props"
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.SEPTA_App.props",
+      "PackagePath": "buildMultiTargeting\\SEPTA_App.props"
     },
     {
-      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.SEPTA App.props",
-      "PackagePath": "buildTransitive\\SEPTA App.props"
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.SEPTA_App.props",
+      "PackagePath": "buildTransitive\\SEPTA_App.props"
     }
   ],
   "ElementsToRemove": []
