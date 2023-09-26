@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+
+
+
+    <!-- Carousel -->
+    <div class="carousel-div">
+        <div id="train_stations" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#train_stations" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#train_stations" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#train_stations" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#train_stations" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#train_stations" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#train_stations" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#train_stations" data-bs-slide-to="5"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="@ViewBag.thirtieth.Image" alt="30th Street Station">
+                    <div>
+                        <h3>@ViewBag.thirtieth.Name</h3>
+                        <p>@ViewBag.thirtieth.Description</p>
+                        <br />
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <img src="@ViewBag.allenLane.Image" alt="Richard Allen Lane">
+                    <div>
+                        <h3>@ViewBag.allenLane.Name</h3>
+                        <p>@ViewBag.allenLane.Description</p>
+                        <br />
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+
+                    <img src="@ViewBag.carpenter.Image" alt="Carpenter Lane" width="423" height="316">
+                    <div>
+                        <h3>@ViewBag.carpenter.Name</h3>
+                        <p>@ViewBag.carpenter.Description</p>
+                        <br />
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <img src="@ViewBag.chelten.Image" alt="New York">
+                    <div>
+                        <h3>@ViewBag.chelten.Name</h3>
+                        <p>@ViewBag.chelten.Description</p>
+                        <br />
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+
+                    <img src="@ViewBag.marketEast.Image" alt="New York">
+                    <div>
+                        <h3>Jefferson Station</h3>
+                        <p>@ViewBag.marketEast.Description</p>
+                        <br />
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+
+                    <img src="@ViewBag.queenLane.Image" alt="New York">
+                    <div>
+                        <h3>@ViewBag.queenLane.Name</h3>
+                        <p>@ViewBag.queenLane.Description</p>
+                        <br />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#train_stations" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#train_stations" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <br />
+    <div class="d-grid gap-2">
+        <button class="btn btn-lg btn-primary" type="button" onclick="location.href='@Url.Action("Index", "Arrivals")'">Arrivals</button>
+        <button class="btn btn-lg btn-primary" type="button" onclick="location.href='@Url.Action("Index", "NextToArrive")'">Next To Arrive</button>
+    </div>
+</div>
+    
+

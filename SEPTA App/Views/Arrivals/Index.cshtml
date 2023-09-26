@@ -1,0 +1,69 @@
+﻿@model ArrivalFormResponse
+
+
+
+<div class="carousel-div">
+    <h1>Arrivals</h1>
+    <form method="post" asp-controller="Arrivals" asp-action="ReturnSchedule">
+        <fieldset class="form-group">
+            <label for="StationName">Station</label>
+            <div class="form-group">
+                <select class="form-select" name="StationName">
+                    <option value="@ViewBag.thirtieth">30th Street Station</option>
+                    <option value="@ViewBag.allenLane">Allen Lane</option>
+                    <option value="@ViewBag.carpenter">Carpenter Station</option>
+                    <option value="@ViewBag.chelten">Chelten Station</option>
+                    <option value="@ViewBag.marketEast">Jefferson Station</option>
+                    <option value="@ViewBag.queenLane">Queen Lane</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset class="form-group">
+            <legend class="mt-4">Direction</legend>
+            <div class="form-check">
+                <input asp-for="SelectedDirection" class="form-check-input" type="radio" name="selectedDirection" id="optionsRadios1" value="NorthBound" checked="">
+                <label class="form-check-label" for="optionsRadios1">
+                    NorthBound - trains to Center City
+                </label>
+            </div>
+            <div class="form-check">
+                <input asp-for="SelectedDirection" class="form-check-input" type="radio" name="selectedDirection" id="optionsRadios2" value="SouthBound">
+                <label class="form-check-label" for="optionsRadios2">
+                    SouthBound - trains to ChestnutHill
+                </label>
+            </div>
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button class="btn btn-primary" type="button" onclick="location.href='@Url.Action("Index", "Arrivals")'">Refresh</button>
+    </form>
+</div>
+
+</br>
+<div class="carousel-div">
+
+    @if (ViewBag.schedule == null)
+    {
+        <p>No schedule available.</p>
+    }
+
+
+    @if (ViewBag.schedule != null)
+    {
+        <h4><font color="#1a03c5">@ViewBag.stationName</font> Departures - @ViewBag.dateTime</h4>
+        <br />
+        
+        <ul>
+            <li><h5><b>Direction:</b> @ViewBag.schedule.direction</h5></li>
+            <li><h5><b>Train Id:</b> @ViewBag.schedule.train_id</h5></li>
+            <li><h5><b>Origin:</b> @ViewBag.schedule.origin</h5></li>
+            <li><h5><b>Destination:</b> @ViewBag.schedule.destination</h5></li>
+            <li><h5><b>Line:</b> @ViewBag.schedule.line</h5></li>
+            <li><h5><b>Status:</b> @ViewBag.schedule.status</h5></li>
+            <li><h5><b>Scheduled Time:</b> @ViewBag.schedule.sched_time</h5></li>
+            <li><h5><b>Depart Time:</b> @ViewBag.schedule.depart_time</h5></li>
+        </ul>
+
+     }
+
+       
+    </div>
