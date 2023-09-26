@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/corinnewilson/Projects/SEPTA App/SEPTA App/wwwroot/js/app.js",
+      "PackagePath": "staticwebassets/js/app.js"
+    },
+    {
+      "Id": "/Users/corinnewilson/Projects/SEPTA App/SEPTA App/wwwroot/js/app.js.map",
+      "PackagePath": "staticwebassets/js/app.js.map"
+    },
+    {
       "Id": "/Users/corinnewilson/Projects/SEPTA App/SEPTA App/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

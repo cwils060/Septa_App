@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mr/Fc3WytflQNgmC/emuahSwDYrF9VrMP9utJz8G8/w=",
+  "Hash": "UIPxJNI0hd8hFTwN1XyWY9dnhaFFNSqoEK/gzPQmZ3k=",
   "Source": "SEPTA_App",
   "BasePath": "_content/SEPTA_App",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/corinnewilson/Projects/SEPTA App/SEPTA App/wwwroot/js/app.js",
+      "SourceId": "SEPTA_App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/corinnewilson/Projects/SEPTA App/SEPTA App/wwwroot/",
+      "BasePath": "_content/SEPTA_App",
+      "RelativePath": "js/app.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/app.js"
+    },
+    {
+      "Identity": "/Users/corinnewilson/Projects/SEPTA App/SEPTA App/wwwroot/js/app.js.map",
+      "SourceId": "SEPTA_App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/corinnewilson/Projects/SEPTA App/SEPTA App/wwwroot/",
+      "BasePath": "_content/SEPTA_App",
+      "RelativePath": "js/app.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/app.js.map"
     },
     {
       "Identity": "/Users/corinnewilson/Projects/SEPTA App/SEPTA App/wwwroot/js/site.js",
