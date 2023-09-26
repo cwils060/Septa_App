@@ -51,6 +51,7 @@ namespace SEPTA_App.Controllers
             var station2 = formResponse.Station2;
 
             NextToArrive schedule = new NextToArrive();
+            NextToArrive schedule2 = new NextToArrive();
 
             var response = await NextToArrive(station1, station2);
 
@@ -62,6 +63,7 @@ namespace SEPTA_App.Controllers
             if( response.Count >= 1)
             {
                 schedule = response[0];
+                schedule2 = response[1];
             }
 
             ViewBag.station1 = station1;
@@ -69,6 +71,7 @@ namespace SEPTA_App.Controllers
 
             ViewBag.dateTime = DateTime.Now;
             ViewBag.schedule = schedule;
+            ViewBag.schedule2 = schedule2;
 
             return View("Index");
         }

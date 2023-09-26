@@ -52,16 +52,20 @@ namespace SEPTA_App.Controllers
             var selectedDirection = formResponse.SelectedDirection;
 
             TrainSchedule schedule = new TrainSchedule();
+            TrainSchedule schedule2 = new TrainSchedule();
+
             var arrival = await GetArrivals(stationName);
 
            
             if (selectedDirection == "NorthBound" && arrival.Northbound != null)
             {
                 schedule = arrival.Northbound[0];
+                schedule2 = arrival.Northbound[1];
             }
             if (selectedDirection == "SouthBound" && arrival.Southbound != null)
             {
                 schedule = arrival.Southbound[0];
+                schedule2 = arrival.Southbound[1];
             }
             else if( arrival.Northbound == null || arrival.Southbound == null)
             {
@@ -71,6 +75,7 @@ namespace SEPTA_App.Controllers
             ViewBag.stationName = stationName;
             ViewBag.dateTime = DateTime.Now;
             ViewBag.schedule = schedule;
+            ViewBag.schedule2 = schedule2;
 
             return View("Index");
         }

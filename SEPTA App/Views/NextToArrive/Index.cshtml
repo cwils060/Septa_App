@@ -45,17 +45,31 @@
 
     @if (ViewBag.schedule != null)
     {
-        <h4><font color="#1a03c5">@ViewBag.station1 </font> next to arrive at <font color="#1a03c5">@ViewBag.station2</font> - @ViewBag.dateTime</h4>
+        <p>Schedule as of: @ViewBag.dateTime</p>
+
+    
+            <h4><font color="#1a03c5">@ViewBag.station1 </font> next to arrive at <font color="#1a03c5">@ViewBag.station2</font></h4>
+            <br />
+
+            <ul>
+                <li><h5><b>Origin Train:</b> @ViewBag.schedule.OrigTrain</h5></li>
+                <li><h5><b>Origin Line:</b> @ViewBag.schedule.OrigLine</h5></li>
+                <li><h5><b>Origin Departure Time:</b> @ViewBag.schedule.OrigDepartureTime</h5></li>
+                <li><h5><b>Origin Arrival:</b> @ViewBag.schedule.OrigArrivalTime</h5></li>
+                <li><h5><b>Origin Delay:</b> @ViewBag.schedule.OrigDelay</h5></li>
+            </ul>
+       
         <br />
 
-        <ul>
-            <li><h5><b>Origin Train:</b> @ViewBag.schedule.OrigTrain</h5></li>
-            <li><h5><b>Origin Line:</b> @ViewBag.schedule.OrigLine</h5></li>
-            <li><h5><b>Origin Departure Time:</b> @ViewBag.schedule.OrigDepartureTime</h5></li>
-            <li><h5><b>Origin Arrival:</b> @ViewBag.schedule.OrigArrivalTime</h5></li>
-            <li><h5><b>Origin Delay:</b> @ViewBag.schedule.OrigDelay</h5></li>
-        </ul>
+        @if (ViewBag.schedule2 != null)
+        {
+
+            <h6>There is another train scheduled to depart <font color="#1a03c5">@ViewBag.station1</font> at <u>@ViewBag.schedule2.OrigDepartureTime</u> and arrive at <font color="#1a03c5">@ViewBag.station2</font> at <u>@ViewBag.schedule2.OrigArrivalTime.</u></h6>
+        }
 
     }
+
+
+
 </div>
     

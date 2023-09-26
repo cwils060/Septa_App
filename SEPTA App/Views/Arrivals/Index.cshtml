@@ -49,9 +49,11 @@
 
     @if (ViewBag.schedule != null)
     {
-        <h4><font color="#1a03c5">@ViewBag.stationName</font> Departures - @ViewBag.dateTime</h4>
+        <p>Schedule as of: @ViewBag.dateTime</p>
+
+        <h4><font color="#1a03c5">@ViewBag.stationName</font> Departures</h4>
         <br />
-        
+
         <ul>
             <li><h5><b>Direction:</b> @ViewBag.schedule.direction</h5></li>
             <li><h5><b>Train Id:</b> @ViewBag.schedule.train_id</h5></li>
@@ -62,8 +64,14 @@
             <li><h5><b>Scheduled Time:</b> @ViewBag.schedule.sched_time</h5></li>
             <li><h5><b>Depart Time:</b> @ViewBag.schedule.depart_time</h5></li>
         </ul>
+        <br />
+        @if(ViewBag.schedule2 != null)
+{
 
-     }
+                <h6>There is another train scheduled to attrive at <font color="#1a03c5">@ViewBag.stationName</font> at <u>@ViewBag.schedule2.sched_time</u></h6>
+}
 
-       
-    </div>
+    }
+
+
+</div>
