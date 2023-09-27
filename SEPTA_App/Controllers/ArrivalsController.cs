@@ -56,21 +56,21 @@ namespace SEPTA_App.Controllers
 
             var arrival = await GetArrivals(stationName);
 
-           
-            if (selectedDirection == "NorthBound" && arrival.Northbound != null)
+           if (arrival.Northbound == null || arrival.Southbound == null || arrival.Northbound.Count < 1 || arrival.Northbound.Count < 1)
+            {
+                schedule = null;
+            }
+            else if (selectedDirection == "NorthBound" && arrival.Northbound != null || arrival.Northbound.Count >= 1)
             {
                 schedule = arrival.Northbound[0];
                 schedule2 = arrival.Northbound[1];
             }
-            if (selectedDirection == "SouthBound" && arrival.Southbound != null)
+            else if (selectedDirection == "SouthBound" && arrival.Southbound != null || arrival.Southbound.Count >=1)
             {
                 schedule = arrival.Southbound[0];
                 schedule2 = arrival.Southbound[1];
             }
-            else if( arrival.Northbound == null || arrival.Southbound == null)
-            {
-                schedule = null;
-            }
+            
 
             ViewBag.stationName = stationName;
             ViewBag.dateTime = DateTime.Now;
