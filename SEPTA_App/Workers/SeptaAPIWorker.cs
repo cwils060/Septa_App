@@ -249,7 +249,7 @@ namespace SEPTA_App.Workers
                 Id = 7,
                 Image = "https://www.inquirer.com/resizer/sMLUk9etP8Znm_3sYtB1G0jPsus=/700x467/smart/filters:format(webp)/arc-anglerfish-arc2-prod-pmn.s3.amazonaws.com/public/P5BSWEX2VFBKVF72QJBEAWPNDU.jpg",
                 Name = "Suburban Station",
-                Description = "Suburban Station is an art deco office building and underground commuter rail station in Penn Center in Philadelphia. Its official SEPTA address is 16th Street and JFK Boulevard.[5] The station is owned and operated by SEPTA and is one of the three core Center City stations on the SEPTA Regional Rail and one of the busiest stations in the Regional Rail System."
+                Description = "Suburban Station is an art deco office building and underground commuter rail station in Penn Center in Philadelphia. Its official SEPTA address is 16th Street and JFK Boulevard. The station is owned and operated by SEPTA and is one of the three core Center City stations on the SEPTA Regional Rail and one of the busiest stations in the Regional Rail System."
             };
 
             result.Add(ThirtiethStreet);
