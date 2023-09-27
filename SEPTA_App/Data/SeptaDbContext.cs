@@ -30,7 +30,7 @@ namespace SEPTA_App.Data
         {
             Id = 3,
             Image = "https://upload.wikimedia.org/wikipedia/commons/4/44/Carpenter_Lane_SEPTA.JPG",
-            Name = "Carpenter Station",
+            Name = "Carpenter",
             Description = "Carpenter station is a SEPTA Regional Rail station in Philadelphia, Pennsylvania. Located at 201 Carpenter Lane, it serves the Chestnut Hill West Line.\nThe historic station building has been listed in the Philadelphia Register of Historic Places since August 6, 1981.It is in zone 2 on the Chestnut Hill West Line, on former Pennsylvania Railroad tracks, and is 9.8 track miles from Suburban Station. In fiscal 2012, this station saw 371 boardings on an average weekday."
         };
 
@@ -38,7 +38,7 @@ namespace SEPTA_App.Data
         {
             Id = 4,
             Image = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Chelten_Avenue_Station.jpg/300px-Chelten_Avenue_Station.jpg",
-            Name = "Chelten Avenue station",
+            Name = "Chelten Avenue",
             Description = "Chelten Avenue station is a SEPTA Regional Rail station in Philadelphia, Pennsylvania. Located on West Chelten Avenue in the Germantown neighborhood, it serves the Chestnut Hill West Line. The concrete station structure, part of a Pennsylvania Railroad grade-separation project completed in 1918 in conjunction with electrification of the line, was designed by William Holmes Cookman.\n\nA station has been at this location since June 11, 1884. Known initially as Germantown, the 1918 station was named Chelten Avenue to avoid confusion with the Philadelphia & Reading Railroad's Germantown."
         };
 
