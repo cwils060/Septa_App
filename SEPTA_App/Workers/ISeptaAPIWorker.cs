@@ -9,6 +9,8 @@ namespace SEPTA_App.Workers
 
         public Task<Direction> GetDirections(string station);
 
+        public List<Station> GetStations();
+
     }
 }
 

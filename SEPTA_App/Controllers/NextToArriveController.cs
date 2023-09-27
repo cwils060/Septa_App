@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using SEPTA_App.Data;
 using SEPTA_App.Models;
 using SEPTA_App.Workers;
 
@@ -16,20 +14,19 @@ namespace SEPTA_App.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ISeptaAPIWorker _septaWorker;
-        private readonly SeptaDbContext _context;
+       
 
-
-        public NextToArriveController(ILogger<HomeController> logger, ISeptaAPIWorker worker, SeptaDbContext context)
+        public NextToArriveController(ILogger<HomeController> logger, ISeptaAPIWorker worker)
         {
             _logger = logger;
             _septaWorker = worker;
-            _context = context;
+            
         }
 
         // GET: /<controller>/
         public IActionResult Index()
         {
-            var stations = _context.Stations.ToList();
+            var stations = _septaWorker.GetStations();
 
             ViewBag.thirtieth = stations[0].Name;
             ViewBag.allenLane = stations[1].Name;
