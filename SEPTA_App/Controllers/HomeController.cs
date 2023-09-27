@@ -35,6 +35,7 @@ public class HomeController : Controller
         ViewBag.chelten = stations[3];
         ViewBag.marketEast = stations[4];
         ViewBag.queenLane = stations[5];
+        ViewBag.suburban = stations[6];
 
 
         ViewBag.stations = stations;

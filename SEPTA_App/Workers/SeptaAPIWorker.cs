@@ -244,12 +244,21 @@ namespace SEPTA_App.Workers
                       Description = "Queen Lane station is a SEPTA Regional Rail station in Philadelphia, Pennsylvania. Located at 5319 Wissahickon Avenue facing West Queen Lane, it serves the Chestnut Hill West Line.\n\nThe station is 7.4 miles (11.9 km) from Suburban Station. In 2004, this station saw 470 boardings on an average weekday. It was built for the Philadelphia, Germantown and Chestnut Hill Railroad, a subsidiary of the Pennsylvania Railroad, in 1885 to a design by Washington Bleddyn Powell."
                   };
 
+            Station Suburban = new Station()
+            {
+                Id = 7,
+                Image = "https://www.inquirer.com/resizer/sMLUk9etP8Znm_3sYtB1G0jPsus=/700x467/smart/filters:format(webp)/arc-anglerfish-arc2-prod-pmn.s3.amazonaws.com/public/P5BSWEX2VFBKVF72QJBEAWPNDU.jpg",
+                Name = "Suburban Station",
+                Description = "Suburban Station is an art deco office building and underground commuter rail station in Penn Center in Philadelphia. Its official SEPTA address is 16th Street and JFK Boulevard.[5] The station is owned and operated by SEPTA and is one of the three core Center City stations on the SEPTA Regional Rail and one of the busiest stations in the Regional Rail System."
+            };
+
             result.Add(ThirtiethStreet);
             result.Add(AllensLane);
             result.Add(Carpenter);
             result.Add(Chelten);
             result.Add(Jefferson);
             result.Add(QueenLane);
+            result.Add(Suburban);
 
             return result;
     }

@@ -36,6 +36,7 @@ namespace SEPTA_App.Controllers
             ViewBag.chelten = stations[3].Name;
             ViewBag.marketEast = stations[4].Name;
             ViewBag.queenLane = stations[5].Name;
+            ViewBag.suburban = stations[6].Name;
 
             ViewBag.stations = stations;
 
