@@ -70,10 +70,14 @@ namespace SEPTA_App.Controllers
                 schedule = arrival.Southbound[0];
                 schedule2 = arrival.Southbound[1];
             }
-            
+
+            var date = DateTime.Now.ToString();
+
+            var convertedDate = DateTime.SpecifyKind(DateTime.Parse(date), DateTimeKind.Utc);
+            var localTime = convertedDate.ToUniversalTime();
 
             ViewBag.stationName = stationName;
-            ViewBag.dateTime = DateTime.Now;
+            ViewBag.dateTime = localTime;
             ViewBag.schedule = schedule;
             ViewBag.schedule2 = schedule2;
 
